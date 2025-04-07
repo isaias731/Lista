@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Java {
+    public static void main(String[] args) {
+        ArrayList<String> Lista = new ArrayList<String>();
+
+        Lista.add("João");
+        Lista.add("Pedro");
+        Lista.add("Maria");
+        Lista.add("Jose");
+        Lista.add("Antonio");
+
+        Lista.remove("Jose");
+        System.out.println("Alunos Restantes: 4" + Lista.size());
+
+    }
+}
