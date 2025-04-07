@@ -1,17 +1,24 @@
 import java.util.ArrayList;
 
-public class Java {
-    public static void main(String[] args) {
-        ArrayList<String> Lista = new ArrayList<String>();
+public class Lista{
+    public static void main(String[] args){
 
-        Lista.add("João");
-        Lista.add("Pedro");
-        Lista.add("Maria");
+        System.out.println("Lista dos alunos");
+
+        ArrayList<String> Lista = new ArrayList<>();
+
         Lista.add("Jose");
-        Lista.add("Antonio");
+        Lista.add("Maria");
+        Lista.add("João");
+        Lista.add("Carlos");
+        Lista.add("Matheus");
 
-        Lista.remove("Jose");
-        System.out.println("Alunos Restantes: 4" + Lista.size());
+        System.out.println(Lista);
 
+        Lista.remove("Carlos");
+        System.out.println("Aluno removido: Carlos");
+        System.out.println(Lista);
+
+        System.out.println("Alunos restantes: " + Lista.size());
     }
 }
